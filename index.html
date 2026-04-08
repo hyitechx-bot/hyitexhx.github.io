@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HyiTechX – Solutions Built for Your Business</title>
+  <meta name="description" content="HyiTechX delivers cutting-edge software solutions built for your business." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-text">Hyi<span class="logo-accent">Tech</span><span class="logo-x">X</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#contact" class="btn-nav">Get Started</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="container hero-content">
+      <div class="hero-badge">&#x1F680; Next-Gen Software Solutions</div>
+      <h1 class="hero-title">We Build Software<br /><span class="gradient-text">That Drives Growth</span></h1>
+      <p class="hero-sub">HyiTechX crafts high-performance digital solutions — from web apps to cloud infrastructure — tailored to your business goals.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">Start Your Project</a>
+        <a href="#services" class="btn-ghost">Explore Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Projects Delivered</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">30+</span><span class="stat-label">Happy Clients</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5&#9733;</span><span class="stat-label">Client Rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2>Services Built to <span class="gradient-text">Scale</span></h2>
+        <p>End-to-end software services covering every stage of your digital journey.</p>
+      </div>
+
+      <!-- Core Services -->
+      <div class="services-category-label">Core Software Services</div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Modern, responsive web applications built with React, Next.js, Vue, and more.</p>
+          <ul class="service-list"><li>Custom Web Apps</li><li>E-Commerce Platforms</li><li>CMS &amp; Portals</li></ul>
+        </div>
+        <div class="service-card featured">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <h3>Mobile Apps</h3>
+          <p>Cross-platform and native mobile apps for iOS and Android with seamless UX.</p>
+          <ul class="service-list"><li>React Native / Flutter</li><li>iOS &amp; Android Native</li><li>App Store Deployment</li></ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+          </div>
+          <h3>Cloud &amp; DevOps</h3>
+          <p>Scalable cloud infrastructure, CI/CD pipelines, and DevOps automation.</p>
+          <ul class="service-list"><li>AWS / Azure / GCP</li><li>Docker &amp; Kubernetes</li><li>CI/CD Pipelines</li></ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>User-centered design that converts visitors into customers.</p>
+          <ul class="service-list"><li>Wireframing &amp; Prototyping</li><li>Design Systems</li><li>User Research</li></ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3>API &amp; Backend</h3>
+          <p>Robust REST and GraphQL APIs, microservices, and database design.</p>
+          <ul class="service-list"><li>REST &amp; GraphQL APIs</li><li>Microservices</li><li>Database Architecture</li></ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3>QA &amp; Testing</h3>
+          <p>Comprehensive testing strategies to ship bug-free, reliable software.</p>
+          <ul class="service-list"><li>Automated Testing</li><li>Performance Testing</li><li>Security Audits</li></ul>
+        </div>
+      </div>
+
+      <!-- AI Services -->
+      <div class="services-category-label ai-label">
+        <span class="ai-badge">&#x2728; AI-Powered</span>
+        AI-Driven Services
+      </div>
+      <div class="services-grid ai-grid">
+        <div class="service-card ai-card">
+          <div class="service-icon ai-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3>AI Chatbots &amp; Assistants</h3>
+          <p>Custom LLM-powered chatbots and virtual assistants trained on your business data.</p>
+          <ul class="service-list"><li>GPT / Claude Integration</li><li>RAG-based Knowledge Bots</li><li>Multi-channel Deployment</li></ul>
+        </div>
+        <div class="service-card ai-card featured">
+          <div class="featured-badge">Trending</div>
+          <div class="service-icon ai-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h7"/><circle cx="17" cy="17" r="3"/><path d="M20 20l2 2"/></svg>
+          </div>
+          <h3>Generative AI Solutions</h3>
+          <p>Build products powered by generative AI — text, image, code, and content generation.</p>
+          <ul class="service-list"><li>Custom AI Pipelines</li><li>Content Generation Tools</li><li>AI-Powered Search</li></ul>
+        </div>
+        <div class="service-card ai-card">
+          <div class="service-icon ai-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3>Predictive Analytics</h3>
+          <p>ML models that forecast trends, customer behavior, and business outcomes.</p>
+          <ul class="service-list"><li>Demand Forecasting</li><li>Churn Prediction</li><li>Recommendation Engines</li></ul>
+        </div>
+        <div class="service-card ai-card">
+          <div class="service-icon ai-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8h2m2 0h2m2 0h2M7 11h4"/></svg>
+          </div>
+          <h3>Intelligent Process Automation</h3>
+          <p>AI-driven RPA that eliminates repetitive tasks and streamlines operations end-to-end.</p>
+          <ul class="service-list"><li>Document Processing (OCR/NLP)</li><li>Workflow Automation</li><li>Smart Data Extraction</li></ul>
+        </div>
+        <div class="service-card ai-card">
+          <div class="service-icon ai-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.069A1 1 0 0121 8.82V15.18a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>
+          </div>
+          <h3>Computer Vision</h3>
+          <p>Image and video analysis solutions for quality control, security, and recognition tasks.</p>
+          <ul class="service-list"><li>Object Detection</li><li>Facial Recognition</li><li>Visual Quality Inspection</li></ul>
+        </div>
+        <div class="service-card ai-card">
+          <div class="service-icon ai-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>AI Agent Development</h3>
+          <p>Autonomous AI agents that plan, reason, and execute multi-step tasks on your behalf.</p>
+          <ul class="service-list"><li>Agentic Workflows</li><li>Tool-Using AI Agents</li><li>LangChain / CrewAI</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about-inner">
+      <div class="about-visual">
+        <div class="about-card-stack">
+          <div class="about-card ac1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <span>Fast Delivery</span>
+          </div>
+          <div class="about-card ac2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <span>Secure Code</span>
+          </div>
+          <div class="about-card ac3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Expert Team</span>
+          </div>
+          <div class="about-glow"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">About HyiTechX</span>
+        <h2>Solutions Built for <span class="gradient-text">Your Business</span></h2>
+        <p>We're a team of passionate engineers, designers, and strategists who believe great software changes businesses. HyiTechX was founded with one mission: deliver technology that actually works for you.</p>
+        <p>From startups launching their first product to enterprises modernizing legacy systems, we bring the same dedication to every project.</p>
+        <div class="about-features">
+          <div class="about-feature"><div class="feature-check">&#10003;</div><span>Agile development with transparent communication</span></div>
+          <div class="about-feature"><div class="feature-check">&#10003;</div><span>Post-launch support and maintenance included</span></div>
+          <div class="about-feature"><div class="feature-check">&#10003;</div><span>NDA-protected, confidential development process</span></div>
+          <div class="about-feature"><div class="feature-check">&#10003;</div><span>On-time delivery with milestone-based progress</span></div>
+        </div>
+        <a href="#contact" class="btn-primary">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2>Projects We're <span class="gradient-text">Proud Of</span></h2>
+        <p>A glimpse into what we've built for our clients.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <div class="portfolio-img pi1"><div class="portfolio-overlay"><span class="portfolio-tag">Web App</span></div></div>
+          <div class="portfolio-info">
+            <h3>FinTrack Dashboard</h3>
+            <p>Real-time financial analytics platform with AI-powered insights for SMEs.</p>
+            <div class="portfolio-tech"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img pi2"><div class="portfolio-overlay"><span class="portfolio-tag">Mobile App</span></div></div>
+          <div class="portfolio-info">
+            <h3>DeliverX App</h3>
+            <p>On-demand delivery platform with real-time tracking and driver management.</p>
+            <div class="portfolio-tech"><span>Flutter</span><span>Firebase</span><span>Google Maps</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-img pi3"><div class="portfolio-overlay"><span class="portfolio-tag">E-Commerce</span></div></div>
+          <div class="portfolio-info">
+            <h3>ShopNova Platform</h3>
+            <p>Multi-vendor e-commerce marketplace with integrated payment gateway.</p>
+            <div class="portfolio-tech"><span>Next.js</span><span>Stripe</span><span>MongoDB</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How We Work</span>
+        <h2>Our <span class="gradient-text">Process</span></h2>
+        <p>A streamlined approach that keeps you in the loop at every step.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step"><div class="step-num">01</div><h3>Discovery</h3><p>We dive deep into your business goals, audience, and technical requirements.</p></div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step"><div class="step-num">02</div><h3>Design</h3><p>Wireframes, prototypes, and design systems crafted before a single line of code.</p></div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step"><div class="step-num">03</div><h3>Build</h3><p>Agile sprints with regular demos so you always know where your project stands.</p></div>
+        <div class="process-arrow">&#8594;</div>
+        <div class="process-step"><div class="step-num">04</div><h3>Launch</h3><p>Deployment, testing, and ongoing support to ensure a smooth go-live.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Love</span>
+        <h2>What Our <span class="gradient-text">Clients Say</span></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"HyiTechX delivered our platform ahead of schedule and the quality was outstanding. They truly understood our vision."</p>
+          <div class="testimonial-author"><div class="author-avatar av1">JM</div><div><strong>James Mitchell</strong><span>CEO, FinTrack</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"The mobile app they built for us has over 10k downloads in the first month. Incredible work from an incredible team."</p>
+          <div class="testimonial-author"><div class="author-avatar av2">SR</div><div><strong>Sarah Rahman</strong><span>Founder, DeliverX</span></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Professional, responsive, and technically brilliant. HyiTechX is our go-to partner for all software needs."</p>
+          <div class="testimonial-author"><div class="author-avatar av3">DK</div><div><strong>David Kim</strong><span>CTO, ShopNova</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-info">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Ready to Build <span class="gradient-text">Something Great?</span></h2>
+        <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>hello@hyitechx.com</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>+1 (555) 000-0000</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Remote-First, Worldwide</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <optgroup label="Core Software Services">
+              <option>Web Development</option>
+              <option>Mobile App</option>
+              <option>Cloud &amp; DevOps</option>
+              <option>UI/UX Design</option>
+              <option>API &amp; Backend</option>
+              <option>QA &amp; Testing</option>
+            </optgroup>
+            <optgroup label="AI-Driven Services">
+              <option>AI Chatbots &amp; Assistants</option>
+              <option>Generative AI Solutions</option>
+              <option>Predictive Analytics</option>
+              <option>Intelligent Process Automation</option>
+              <option>Computer Vision</option>
+              <option>AI Agent Development</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full">Send Message &#8594;</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text footer-logo-text">Hyi<span class="logo-accent">Tech</span><span class="logo-x">X</span></span>
+        <p>Solutions Built for Your Business.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Mobile Apps</a></li>
+            <li><a href="#services">Cloud &amp; DevOps</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Our Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 HyiTechX. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
